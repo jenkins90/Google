@@ -8,3 +8,4 @@ RUN rm-rf healet.zip  &&\
     rm -rf healet
 EXPOSE 80
 CMD ["/usr/sbin/httpd" ,"-D", "FORGROUND"]
+
