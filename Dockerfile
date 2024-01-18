@@ -5,6 +5,6 @@ WORKDIR /var/www/html
 RUN unzip healet.zip
 RUN rm-rf healet.zip  &&\
     cp -rf healet/* .  &&\
-    
+    rm -rf healet
 EXPOSE 80
 CMD ["/usr/sbin/httpd" ,"-D", "FORGROUND"]
